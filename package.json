@@ -1,0 +1,51 @@
+{
+  "name": "myVue",
+  "version": "1.0.0",
+  "description": "喵的vue项目",
+  "keywords": [
+    "miao",
+    "vue"
+  ],
+  "bugs": {
+    "url": "",
+    "eamil": "dongjingfeng08@163.com"
+  },
+  "license": "BSD-3-Clause",
+  "author": "喵miao",
+  "contributors": [
+    "da咕噜"
+  ],
+  "repository": {
+    "type": "gitHub",
+    "url": ""
+  },
+  "config": {
+    "post": "8080"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open --hot"
+  },
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vue-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "vue-loader": "^13.7.1",
+    "vue-router": "^2.2.0",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
