@@ -1,5 +1,10 @@
 import Vue from "vue"
+import App from './App'
+import router from './router/router.js'
 
 new Vue({
-    el:"body"
+    el:"#app",
+    router,
+    template: '<App/>',
+    components: { App }
 });
