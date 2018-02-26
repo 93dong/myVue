@@ -12,22 +12,20 @@ export default new Router({
     mode: 'history',
     routes:[
         {
-            path:'',
-            component:app,
-            children:[
-                {
-                    path:"/page1",
-                    compontent: Page1
-                },
-                {
-                    path:"/page2",
-                    compontent:Page2
-                },
-                {
-                    path:"/page3",
-                    compontent:Page3
-                }
-            ]
+            path:'/',
+            redirect:'/page1'
+        },
+        {
+            path:"/page1",
+            component: Page1
+        },
+        {
+            path:"/page2",
+            component:Page2
+        },
+        {
+            path:"/page3",
+            component:Page3
         }
     ]
 })

@@ -3,5 +3,8 @@ import App from './App'
 import router from './router/router.js'
 
 new Vue({
+    el:"#app",
     router,
-}).$mount('#app');
+    template: '<App/>',
+    components: { App }
+});
