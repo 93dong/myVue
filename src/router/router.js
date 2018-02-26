@@ -16,24 +16,6 @@ export default new Router({
             component:app,
             children:[
                 {
-                    path:"",
-                    compontent: Page1,
-                    children:[
-                        {
-                            path:"page1",
-                            compontent: Page1
-                        },
-                        {
-                            path:"page2",
-                            compontent:Page2
-                        },
-                        {
-                            path:"page3",
-                            compontent:Page3
-                        }
-                    ]
-                },
-                {
                     path:"/page1",
                     compontent: Page1
                 },
@@ -46,18 +28,6 @@ export default new Router({
                     compontent:Page3
                 }
             ]
-        },
-        {
-            path:"/page1",
-            compontent: Page1
-        },
-        {
-            path:"/page2",
-            compontent:Page2
-        },
-        {
-            path:"/page3",
-            compontent:Page3
         }
     ]
 })
