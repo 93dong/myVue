@@ -6,7 +6,7 @@
        <li v-for="(item,index) in main.mainOperation">
            <div :title="item.title">
               <img :src="item.icon" :alt="item.title" />
-              <router-link :to="'page'+index">Page{{index}}</router-link>
+              <router-link :to="'/page'+index">Page{{index}}</router-link>
               <div class="meg-detail">
                 <ul></ul>
               </div>
@@ -15,6 +15,7 @@
       </ul>
     </div>
   </div>
+
 </template>
 
 <script>

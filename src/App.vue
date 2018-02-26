@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <mainNav :main = "options.mainOptions"></mainNav>
-    <router-link to="page1">测试</router-link>
     <router-view></router-view>
-    <router-view></router-view>
-    <router-view></router-view>
-
   </div>
 </template>
 
