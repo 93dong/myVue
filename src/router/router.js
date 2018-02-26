@@ -16,6 +16,10 @@ export default new Router({
             component: app,
             children:[
                 {
+                    path:"",
+                    component: Page1
+                },
+                {
                     path:"/page1",
                     component: Page1
                 },
