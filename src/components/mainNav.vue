@@ -4,13 +4,13 @@
     <div class="user-msg">
       <ul>
        <li v-for="(item,index) in main.mainOperation">
-       <div :title="item.title">
-          <img :src="item.icon" :alt="item.title" />
-          <router-link :to="'page'+index">Page{{index}}</router-link>
-          <div class="meg-detail">
-            <ul></ul>
-          </div>
-       </div>
+           <div :title="item.title">
+              <img :src="item.icon" :alt="item.title" />
+              <router-link :to="'page'+index">Page{{index}}</router-link>
+              <div class="meg-detail">
+                <ul></ul>
+              </div>
+           </div>
        </li>
       </ul>
     </div>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import Router from 'vue-router'
 export default {
   name: 'mainNav',
   props:['main'],

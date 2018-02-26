@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div id="app">
     <mainNav :main = "options.mainOptions"></mainNav>
-    <div>
-      <router-view></router-view>
-    </div>
+    <router-link to="page1">测试</router-link>
+    <router-view></router-view>
+    <router-view></router-view>
+    <router-view></router-view>
 
   </div>
 </template>
 
 <script>
-import Router from 'vue-router'
 import mainNav from './components/mainNav'
 export default {
   name: 'app',
