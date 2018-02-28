@@ -7,9 +7,35 @@
 
 <script>
 import mainNav from './components/mainNav'
+import axios from 'axios'
+import AJAX from './ajax/ajax'
 export default {
   name: 'app',
   data :function(){
+    let data = {
+      config:{
+        url:"getMianData",
+        method:"get"
+      },
+      successF:function(returnData){
+        console.log("successF执行成功");
+      },
+      failF:function(returnData){
+        console.log("fialF执行成功");
+      },
+      errorF:function(){
+        console.log("errorF执行成功");
+      }
+    };
+    AJAX.ajax(data);
+    /*axios.get('getMianData', {
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (response) {
+      console.log(response);
+    });*/
     return {
       options:{
               mainOptions:{
