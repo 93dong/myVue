@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry:path.resolve('src/main.js'),
@@ -76,8 +77,19 @@ module.exports = {
         extensions: ['*', '.js', '.vue', '.json']
     },
     devServer: {
+        contentBase:"./dist",
         historyApiFallback: true,
         noInfo: true,
         overlay: true
     },
+    devtool: 'inline-source-map',
+    plugins:[
+        new htmlWebpackPlugin({
+            inject:true,
+            template:"index.html",
+            filename:"index.html",
+            title:"vue",
+            hash:true
+        })
+    ]
 }
