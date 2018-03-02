@@ -12,13 +12,24 @@ import AJAX from './ajax/ajax'
 export default {
   name: 'app',
   data :function(){
+    return {
+      options:{
+        mainOptions: {}
+      }
+    }
+  },
+  created:function(){
+    var _this = this;
     let data = {
       config:{
         url:"getMianData",
         method:"get"
       },
       successF:function(returnData){
-        console.log("successF执行成功");
+        console.log(_this.options);
+        console.log(returnData)
+        _this.options.mainOptions = returnData.data;
+
       },
       failF:function(returnData){
         console.log("fialF执行成功");
@@ -28,41 +39,6 @@ export default {
       }
     };
     AJAX.ajax(data);
-    /*axios.get('getMianData', {
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (response) {
-      console.log(response);
-    });*/
-    return {
-      options:{
-              mainOptions:{
-                navName:"vue测试系统",
-                mainOperation:[
-                  {
-                    title:"邮箱",
-                    icon:"./assets/logo.png",
-                    page:"Page1"
-                  },
-                  {
-                    title:"任务",
-                    icon:"./assets/logo.png"
-                  },
-                  {
-                    title:"信息",
-                     icon:"./assets/logo.png"
-                  },
-                  {
-                    title:"用户",
-                     icon:"./assets/logo.png"
-                  }
-
-                ]
-              }
-            }
-    }
   },
   components:{mainNav}
 }

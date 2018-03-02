@@ -4,7 +4,7 @@
 const code = "0000";
 const mainNav = {
 
-    nav:{
+    data:{
         navName:"vue测试系统",
         mainOperation:[
             {
@@ -31,7 +31,7 @@ const mainNav = {
 
 export default {
     respCode:"0000",
-    nav:{
+    data:{
         navName:"vue测试系统",
         mainOperation:[
             {
