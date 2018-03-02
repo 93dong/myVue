@@ -12,48 +12,6 @@ import AJAX from './ajax/ajax'
 export default {
   name: 'app',
   data :function(){
-    /*let data = {
-      config:{
-        url:"getMianData",
-        method:"get"
-      },
-      successF:function(returnData){
-        console.log("successF执行成功");
-      },
-      failF:function(returnData){
-        console.log("fialF执行成功");
-      },
-      errorF:function(){
-        console.log("errorF执行成功");
-      }
-    };
-    AJAX.ajax(data);*/
-    /*
-    * options:{
-     mainOptions:{
-     navName:"vue测试系统",
-     mainOperation:[
-     {
-     title:"邮箱",
-     icon:"./assets/logo.png",
-     page:"Page1"
-     },
-     {
-     title:"任务",
-     icon:"./assets/logo.png"
-     },
-     {
-     title:"信息",
-     icon:"./assets/logo.png"
-     },
-     {
-     title:"用户",
-     icon:"./assets/logo.png"
-     }
-
-     ]
-     }
-     }*/
     return {
       options:{
         mainOptions: {}
