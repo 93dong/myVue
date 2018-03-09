@@ -19,13 +19,42 @@
 </template>
 
 <script>
-export default {
-  name: 'mainNav',
-  props:['main'],
-  data:function(){
-    return {}
-  }
-}
+    import AJAX from '../ajax/ajax'
+    export default {
+        name: 'mainNav',
+        props:['main'],
+        data:function(){
+            return {
+                url:"getMianData"
+            }
+        },
+        created:function(){
+            var _this = this;
+            console.log(_this);
+
+            console.log(this.$options.propsData);
+            let data = {
+                config:{
+                    url:"",
+                    method:"get"
+                },
+                successF:function(returnData){
+                    console.log(_this.options);
+//                    console.log(returnData)
+//                    _this.options.mainOptions = returnData.data;
+
+                },
+                failF:function(returnData){
+                    console.log("fialF执行成功");
+                },
+                errorF:function(){
+                    console.log("errorF执行成功");
+                }
+            };
+            AJAX.ajax(data);
+        }
+
+    }
 </script>
 
 <style rel="stylesheet/scss" lang="scss">

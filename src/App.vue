@@ -7,7 +7,7 @@
 
 <script>
   import mainNav from './components/mainNav'
-  import axios from 'axios'
+//  import axios from 'axios'
   import AJAX from './ajax/ajax'
   export default {
     name: 'app',
@@ -20,6 +20,7 @@
     },
     created:function(){
       var _this = this;
+      console.log(_this);
       let data = {
         config:{
           url:"getMianData",
