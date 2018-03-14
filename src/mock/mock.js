@@ -7,3 +7,4 @@ import Mock from "mockjs"
 import mianNavData from "./mainNav"
 
 Mock.mock("getMianData","get",mianNavData);
+Mock.mock("login","post",{"respCode":"0000"});

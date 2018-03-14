@@ -4,8 +4,8 @@
      <router-view></router-view>-->
     <div>
       <Layout>
-        <Header>
-          <Menu mode="horizontal"  active-name="1">
+        <Header :style="{background: 'rgba(221,221,221,0.5)',height:'60px'}">
+          <Menu mode="horizontal" theme="hight" active-name="1">
             <div class="layout-logo"></div>
             <div class="layout-nav">
               <MenuItem name="1">
